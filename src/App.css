@@ -1,3 +1,6 @@
+html {
+    overflow-x: hidden;
+}
 :root {
     --red: #dd082f;
     --dark-red: #3b020d;
@@ -14,15 +17,15 @@ header {
 }
 
 .pokedex-container {
-    height: 100vh;
+    margin: 10% 0;
 }
 
 .pokedex {
     perspective: 1000px;
     position: relative;
     overflow: hidden;
-    height: 31rem;
-    width: 23rem;
+    height: 39rem;
+    width: 25rem;
     margin: 0 auto;
     overflow: initial;
     box-shadow: 0 2px 12px -2px rgba(255, 0, 0, 0.4);

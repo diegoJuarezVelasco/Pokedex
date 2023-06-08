@@ -9,9 +9,10 @@ const PokedexScreen = ({ pokemon }) => {
                     alt={pokemon.name}
                 />
                 <div className="">
-                    <h6>Abilities</h6>
                     <ul className="pokemon-stats">
-                        {pokemon?.abilities?.map((ability, index) => (<li key={index}>{ability.ability.name}</li>))}
+                        {pokemon?.stats?.map(item => (
+                            <li key={item?.stat?.name}>{item?.stat?.name}: {item?.base_stat}</li>
+                        ))}
                     </ul>
                 </div>
             </div>
